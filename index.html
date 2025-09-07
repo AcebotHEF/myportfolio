@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My React Portfolio</title>
+    <title> Fortis Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CSS configuration for dark mode -->
@@ -202,11 +203,16 @@
                 >
                   <div className="space-y-4">
                     <h2 className="text-4xl font-extrabold sm:text-6xl md:text-7xl">
-                      Hi, I'm <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">John Doe</span>
+                      Hi, I'm <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Emmanuel Akerele</span>
                     </h2>
-                    <p className="text-lg font-light sm:text-2xl">
-                      I am a passionate <span className="font-semibold text-blue-500 dark:text-blue-400">Web Developer</span> specializing in building beautiful and interactive web applications.
-                    </p>
+                  <p className="text-lg font-light sm:text-2xl">
+                    I am a passionate <span className="font-semibold text-blue-500 dark:text-blue-400">Data & Technology Professional</span> 
+                    specializing in <span className="font-semibold">data science</span>, 
+                    <span className="font-semibold"> machine learning</span>, 
+                    <span className="font-semibold"> MLOps/DevOps</span>, 
+                    and <span className="font-semibold">WordPress/Elementor development</span> to create 
+                    scalable, intelligent solutions and seamless digital experiences.
+                  </p>
                     <div className="flex justify-center space-x-4 pt-4">
                       <a
                         href="#projects"
@@ -229,7 +235,9 @@
                   <h2 className="mb-8 text-center text-3xl font-bold sm:text-4xl">About Me</h2>
                   <div className="rounded-2xl bg-gray-100 p-8 shadow-xl dark:bg-gray-800">
                     <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                      I am a dedicated and results-driven software developer with a strong foundation in modern web technologies. I enjoy solving complex problems and creating intuitive, user-friendly experiences. My journey in development began with a fascination for how code can bring ideas to life. Since then, I've been continuously learning and building projects that not only challenge me but also provide value. When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.
+                    I am a dedicated and results-driven data and technology professional with a strong foundation in data science, machine learning, MLOps, DevOps, workflow automation, and WordPress/Elementor development.
+                    I am passionate about solving complex problems, optimizing workflows, and building scalable, data-driven solutions that deliver meaningful impact. My journey began with a deep curiosity about how technology can bring ideas to life. Over time, I expanded my expertise to include data engineering, AI-powered applications, and custom WordPress/Elementor solutions for creating intuitive, user-friendly digital experiences.
+                    Continuously learning and evolving, I thrive on building projects that challenge me and add real-world value. When I’m not working on projects, you’ll find me exploring emerging technologies, contributing to open-source communities, and discovering new ways to blend data, automation, and design for innovative solutions.
                     </p>
                   </div>
                 </section>
@@ -237,26 +245,160 @@
                 {/* Skills Section */}
                 <section id="skills" className="my-24 py-16">
                   <h2 className="mb-12 text-center text-3xl font-bold sm:text-4xl">My Skills</h2>
-                  <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+
+                  <div className="space-y-12">
                     {[
-                      'JavaScript',
-                      'React',
-                      'Tailwind CSS',
-                      'HTML',
-                      'CSS',
-                      'Node.js',
-                      'Express.js',
-                      'MongoDB',
-                      'Git',
-                      'Responsive Design',
-                      'API Integration',
-                      'Problem Solving',
-                    ].map((skill, index) => (
-                      <div
-                        key={index}
-                        className="transform cursor-pointer rounded-lg bg-gray-100 p-4 text-center text-gray-700 shadow-lg transition-all hover:scale-105 hover:bg-blue-500 hover:text-white dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-blue-400 dark:hover:text-gray-900"
-                      >
-                        {skill}
+                      {
+                        category: "Data Science & Analysis",
+                        skills: [
+                          'Python',
+                          'R',
+                          'SQL',
+                          'Pandas',
+                          'NumPy',
+                          'Matplotlib',
+                          'Seaborn',
+                          'Plotly',
+                          'Tableau',
+                          'Power BI',
+                          'Statistics',
+                          'Hypothesis Testing',
+                          'EDA',
+                          'Data Cleaning'
+                        ]
+                      },
+                      {
+                        category: "Machine Learning & AI",
+                        skills: [
+                          'Scikit-learn',
+                          'TensorFlow',
+                          'PyTorch',
+                          'Keras',
+                          'Hugging Face',
+                          'Regression',
+                          'Classification',
+                          'Clustering',
+                          'Deep Learning',
+                          'NLP',
+                          'Computer Vision',
+                          'FastAPI',
+                          'Streamlit',
+                          'Gradio'
+                        ]
+                      },
+                      {
+                        category: "Data Engineering",
+                        skills: [
+                          'Apache Airflow',
+                          'Prefect',
+                          'Luigi',
+                          'PostgreSQL',
+                          'MySQL',
+                          'MongoDB',
+                          'Apache Spark',
+                          'Databricks',
+                          'AWS Glue',
+                          'Google BigQuery'
+                        ]
+                      },
+                      {
+                        category: "MLOps & DevOps",
+                        skills: [
+                          'Git',
+                          'GitHub',
+                          'Docker',
+                          'Kubernetes',
+                          'Helm',
+                          'Terraform',
+                          'Ansible',
+                          'MLflow',
+                          'Kubeflow',
+                          'Prometheus',
+                          'Grafana'
+                        ]
+                      },
+                      {
+                        category: "Workflow Automation",
+                        skills: [
+                          'Zapier',
+                          'Make (Integromat)',
+                          'Airtable Automation',
+                          'n8n',
+                          'REST APIs',
+                          'Webhooks',
+                          'JSON',
+                          'XML'
+                        ]
+                      },
+                      {
+                        category: "WordPress & Elementor Development",
+                        skills: [
+                          // Website Building & CMS
+                          'WordPress',
+                          'Elementor',
+                          'WooCommerce',
+                          'Theme Customization',
+                          'Plugin Development',
+                          'Custom Widgets',
+
+                          // Frontend Essentials
+                          'HTML',
+                          'CSS',
+                          'JavaScript',
+                          'jQuery',
+                          'Responsive Design',
+
+                          // Website Optimization
+                          'SEO Optimization',
+                          'Performance Tuning',
+                          'Caching Techniques',
+
+                          // Hosting & Deployment
+                          'cPanel',
+                          'FTP',
+                          'Domain Management',
+                          'SSL Setup',
+
+                          // Integrations & Tools
+                          'API Integration',
+                          'Zapier',
+                          'MailChimp',
+                          'Google Analytics',
+                          'Google Tag Manager',
+                        ]
+                      },
+                      {
+                        category: "Soft Skills",
+                        skills: [
+                          'Problem Solving',
+                          'Critical Thinking',
+                          'Communication',
+                          'Team Collaboration',
+                          'Debugging',
+                          'API Integration',
+                          'Agile',
+                          'Scrum',
+                          'Project Management'
+                        ]
+                      }
+                    ].map((group, index) => (
+                      <div key={index}>
+                        {/* Category Title */}
+                        <h3 className="mb-6 text-2xl font-semibold text-center text-blue-600 dark:text-blue-400">
+                          {group.category}
+                        </h3>
+
+                        {/* Skills Grid */}
+                        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+                          {group.skills.map((skill, skillIndex) => (
+                            <div
+                              key={skillIndex}
+                              className="transform cursor-pointer rounded-lg bg-gray-100 p-4 text-center text-gray-700 shadow-lg transition-all hover:scale-105 hover:bg-blue-500 hover:text-white dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-blue-400 dark:hover:text-gray-900"
+                            >
+                              {skill}
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -294,35 +436,62 @@
 
                 {/* Contact Section */}
                 <section id="contact" className="my-24 py-16">
-                  <h2 className="mb-8 text-center text-3xl font-bold sm:text-4xl">Get In Touch</h2>
-                  <div className="flex flex-col items-center justify-center space-y-6">
+                <h2 className="mb-8 text-center text-3xl font-bold sm:text-4xl">
+                    Get In Touch
+                </h2>
+
+                <div className="flex flex-col items-center justify-center space-y-6">
                     <p className="text-lg text-gray-700 dark:text-gray-300">
-                      I am currently open to new opportunities. Feel free to reach out to me!
+                    I am currently open to new opportunities. Feel free to reach out to me!
                     </p>
+
+                    {/* Social Icons */}
                     <div className="flex space-x-6">
-                      <a href="#" className="transform text-gray-600 transition-all hover:scale-110 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400">
-                        <Github className="h-8 w-8" />
-                      </a>
-                      <a href="#" className="transform text-gray-600 transition-all hover:scale-110 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400">
-                        <Linkedin className="h-8 w-8" />
-                      </a>
-                      <a href="#" className="transform text-gray-600 transition-all hover:scale-110 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400">
-                        <Mail className="h-8 w-8" />
-                      </a>
-                    </div>
+                    {/* GitHub */}
                     <a
-                      href="#"
-                      className="transform rounded-full bg-blue-500 px-8 py-4 text-lg font-semibold text-white transition-all hover:scale-105 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+                        href="https://github.com/AcebotHEF"  /* Replace with your GitHub URL */
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="transform text-gray-600 transition-all hover:scale-110 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400"
                     >
-                      Send me an Email
+                        <Github className="h-8 w-8" />
                     </a>
-                  </div>
+
+                    {/* LinkedIn */}
+                    <a
+                        href="https://linkedin.com/in/YourLinkedInUsername"  /* Replace with your LinkedIn URL */
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="transform text-gray-600 transition-all hover:scale-110 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400"
+                    >
+                        <Linkedin className="h-8 w-8" />
+                    </a>
+
+                    {/* Email */}
+                    <a
+                        href="mailto:akereleemmanuel099@gmail.com" /* Replace with your real email */
+                        className="transform text-gray-600 transition-all hover:scale-110 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400"
+                    >
+                        <Mail className="h-8 w-8" />
+                    </a>
+                    </div>
+
+                    {/* Email Button */}
+                    <a
+                    href="mailto:akereleemmanuel099@gmail.com" /* Replace with your real email */
+                    className="transform rounded-full bg-blue-500 px-8 py-4 text-lg font-semibold text-white transition-all hover:scale-105 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+                    >
+                    Send me an Email
+                    </a>
+                </div>
                 </section>
+
+
               </main>
 
               {/* Footer */}
               <footer className="bg-gray-100 p-6 text-center text-gray-600 dark:bg-gray-800 dark:text-gray-400">
-                <p>&copy; 2024 John Doe. All Rights Reserved.</p>
+                <p>&copy; 2025 Emmanuel Akerele. All Rights Reserved.</p>
               </footer>
             </div>
           );
